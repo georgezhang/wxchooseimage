@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="section singlepage">
+        <view class="section">
+            <button type="primary" bindtap="bindChooseImage">选择照片</button>
+        </view>
+
+        <block wx:if="{{uploadimage}}">
+            <image class="fullimage" mode="aspectFit" src="{{uploadimage}}"></image>
+        </block>
+    </view>
+</view>
